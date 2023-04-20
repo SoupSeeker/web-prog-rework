@@ -1,0 +1,86 @@
+/* This is a CSS comment */
+body {
+  background-color: #3a3a3a;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  background-color: lightgray;
+  border-radius: 5px;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 24px;
+}
+
+nav a {
+  color: #111111;
+}
+
+nav a:hover{
+  color: #0faa55; /*light greenish color*/
+}
+
+nav .welcome {
+  color: #111111;
+  position: relative;
+  padding-left: 15px;
+  float: left;
+}
+
+.banner img {
+  width: 45%;
+  margin-top: 5px;
+  margin-right: 10px;
+  border-radius: 5%;
+  vertical-align: middle;
+}
+
+.banner p {
+  float: right;
+}
+
+.info {
+  position: relative;
+  display: inline-block;
+  background-color: #0faa55;
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 25px;
+  width: 32%;
+  height: 5%;
+  padding: 5px;
+  background-color: #0faa55;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.info p {
+  padding: 25px;
+  font-size: 24px;
+}
+
+.footer {
+  color: #0faa55;
+  background-color: lightgray;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+}
