@@ -14,20 +14,20 @@
         <li class="welcome">Welcome to <span style="color: #0faa55;">PaperTradr</span> | User</li> <!-- TODO: update User with index.js -->
         <li><a href="main.html">Home</a></li> |
         <li><a href="register.html">Register</a></li> |
-        <li><a href="login.html">Login</a></li> |
+        <li><a href="login.html">Login</a></li>
         <!--<li><a href="news">News</a></li>-->
         <!--<li><a href="retirement"> Retirement</a></li>-->  
     </ul>
 </nav>
 </br>
 
-<form action="" method="POST">   <!--TODO: create a login php / js file-->
+<form action="auth.php" method="POST">   <!--TODO: create a login php / js file-->
     <div>
         <h1>Login</h1>
         <hr>
-        <label for="email"><b>Email</b></label>
+        <label for="username"><b>Username</b></label>
         </br>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <input type="text" placeholder="Enter Email" name="username" id="username" required>
         </br>
         <label for="password"><b>Password</b></label>
         </br>
@@ -36,7 +36,7 @@
         <hr>
 
         <button type="submit" class="registerbtn">Login</button>
-        <p>Don't have an account? <a href="register">Sign up here</a>.</p>
+        <p>Don't have an account? <a href="register.html">Sign up here</a>.</p>
     </div>
 </form>
 </body>

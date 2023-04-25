@@ -23,21 +23,55 @@
         </nav>
         </br>
         <div class="banner">
-            <!-- Macroaxis Widget Start -->
-            <script src="https://www.macroaxis.com/widgets/url.jsp?t=42&s=AMZN,GOOG,AAPL,MSFT,COST,META,DIS,MA,SHOP,TSLA,SPY,TSM,QQQ,VOO,IWM"></script>
-            <!-- Macroaxis Widget End -->
+<!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+          {
+          "symbols": [
+            {
+              "proName": "FOREXCOM:SPXUSD",
+              "title": "S&P 500"
+            },
+            {
+              "proName": "FOREXCOM:NSXUSD",
+              "title": "US 100"
+            },
+            {
+              "proName": "FX_IDC:EURUSD",
+              "title": "EUR/USD"
+            },
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "Bitcoin"
+            },
+            {
+              "proName": "BITSTAMP:ETHUSD",
+              "title": "Ethereum"
+            }
+          ],
+          "showSymbolLogo": true,
+          "colorTheme": "dark",
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+          </script>
+        </div>
+<!-- TradingView Widget END -->
         </div>
         <br>
 
 
         <h1 style="color: white;">What is the stock market?</h1>
-        <div><img src="../assets/images/options.jpg" width = "800" height = "500"></div>
-        <h3 style="color: white;">The stock market is a ........</h3>
+        <div><img src="../assets/images/stonks.jpg" width = "800" height = "500"></div>
+        <h3 style="color: white;">The stock market is a collection of exchanges where investors can buy and sell publicly traded stocks.</h3>
+        <h4 style="color: white;">It also carries risks as stock prices can fluctuate based on various factors.</h4>
 
           <ul id="test">
-            <li><a href="/options/basics">Options Basics</a></li> |
-            <li><a href="/options/strategy">Options Strategies</a></li> |
-            <li><a href="/options/risks">Options Risks</a></li> 
+            <li><a href="stockbasic.html">Stock Market Basics</a></li> |
+            <li><a href="stockbroker.html">Stock Market Brokers</a></li> |
+            <li><a href="stockreg.html">Stock Market Regulations</a></li> 
           </ul>
 
     </main>

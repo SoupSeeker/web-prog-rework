@@ -84,3 +84,44 @@ nav .welcome {
   left: 0;
   bottom: 0;
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  
+  nav {
+    padding: 5px;
+  }
+  
+  nav li {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  
+  .banner img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    float: none;
+    text-align: center;
+  }
+  
+  .info {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .info p {
+    padding: 10px;
+    font-size: 18px;
+  }
+}

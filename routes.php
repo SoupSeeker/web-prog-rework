@@ -6,13 +6,30 @@ require_once __DIR__.'/router.php';
 // ##################################################
 // ##################################################
 
-// Static GET
+// Static GETs
 // In the URL -> http://localhost
-// The output -> Index
-get('/', '/views/main.php');
+get('/', '/views/main.html');
 get('/main.html', '/views/main.php');
 get('/register.html', '/views/register.php');
 get('/login.html', '/views/login.php');
+
+get('/stockmarket.html', '/views/stockmarket.php');
+get('/stockbasic.html', '/views/stockbasic.php');
+get('/stockbroker.html', '/views/stockbroker.php');
+get('/stockreg.html', '/views/stockreg.php');
+
+get('/options.html', '/views/options.php');
+get('/basics.html', '/views/basics.php');
+get('/strategy.html', '/views/strategy.php');
+get('/risks.html', '/views/risks.php');
+
+get('/retirement.html', '/views/retirement.php');
+get('/401k.html', '/views/401k.php');
+get('/roth.html', '/views/roth.php');
+get('/trad.html', '/views/trad.php');
+
+post('/reg.php', '/views/reg.php');
+post('/auth.php', '/views/auth.php');
 
 // Dynamic GET. Example with 1 variable
 // The $id will be available in user.php

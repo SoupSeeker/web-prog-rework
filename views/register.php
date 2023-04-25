@@ -14,20 +14,20 @@
             <li class="welcome">Welcome to <span style="color: #0faa55;">PaperTradr</span> | User</li> <!-- TODO: update User with index.js -->
             <li><a href="main.html">Home</a></li> |
             <li><a href="register.html">Register</a></li> |
-            <li><a href="login.html">Login</a></li> |
+            <li><a href="login.html">Login</a></li>
             <!--<li><a href="news">News</a></li>-->
             <!--<li><a href="retirement"> Retirement</a></li>-->           
         </ul>
     </nav>
     </br>
 
-    <form action="" method="post">
+    <form action="reg.php" method="post">
         <div>
             <h1>Register</h1>
             <hr>
             <label for="username"><b>Username</b></label>
             </br>
-            <input type="text" placeholder="Enter Username" name="name" id="name" required>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>
             </br>         
             <label for="email"><b>Email</b></label>
             </br>
@@ -37,13 +37,10 @@
             </br>
             <input type="password" placeholder="Enter Password" name="password" id="password" required>
             </br>
-            <label for="password-repeat"><b>Repeat Password</b></label>
-            </br>
-            <input type="password" placeholder="Repeat Password" name="password-repeat" id="password-repeat" required>
             <hr>
             <!--TODO: add the ability to login with google or facebook -->
             <button type="submit" class="registerbtn">Register</button>
-            <p>Already have an account? <a href="login">Sign in</a>.</p>
+            <p>Already have an account? <a href="login.html">Sign in</a>.</p>
         </div>
 </form>
 </body>
