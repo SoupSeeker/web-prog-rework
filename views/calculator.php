@@ -1,3 +1,11 @@
+ <?php
+    session_start();
+    if(empty($_SESSION['name']))
+    {
+        header('Location: /login.html');
+        exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 

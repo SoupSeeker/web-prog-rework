@@ -25,7 +25,7 @@
         <hr>
         <label for="username"><b>Username</b></label>
         </br>
-        <input type="text" placeholder="Enter Email" name="username" id="username" required>
+        <input type="text" placeholder="Enter Username" name="username" id="username" required>
         </br>
         <label for="password"><b>Password</b></label>
         </br>

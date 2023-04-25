@@ -31,6 +31,7 @@ get('/trad.html', '/views/trad.php');
 
 get('/news.html', '/views/news.php');
 get('/calc.html', '/views/calculator.php');
+get('/dashboard.html', '/views/dashboard.php');
 
 post('/reg.php', '/views/reg.php');
 post('/auth.php', '/views/auth.php');

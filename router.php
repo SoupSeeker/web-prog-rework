@@ -76,3 +76,4 @@ function is_csrf_valid(){
   if( $_SESSION['csrf'] != $_POST['csrf']){ return false; }
   return true;
 }
+?>

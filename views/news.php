@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html>
+ <?php
+    session_start();
+    if(empty($_SESSION['name']))
+    {
+        header('Location: /login.html');
+        exit;
+    }
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +19,7 @@
 <body>
    <main>
         <?php if($_SESSION["name"]){ ?>
-      <nav>
+        <nav>
           <ul>
             <li class="welcome">Welcome to <span style="color: #0faa55;">PaperTradr</span> <?php echo $_SESSION["name"] ?>
             </li>
