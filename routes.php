@@ -1,5 +1,5 @@
 <?php
-
+// this router comes from https://github.com/phprouter/main, includes CSRF and XSS protections
 require_once __DIR__.'/router.php';
 
 // ##################################################
@@ -8,10 +8,11 @@ require_once __DIR__.'/router.php';
 
 // Static GETs
 // In the URL -> http://localhost
-get('/', '/views/main.html');
+get('/', '/views/main.php');
 get('/main.html', '/views/main.php');
 get('/register.html', '/views/register.php');
 get('/login.html', '/views/login.php');
+get('/logout.php', '/views/logout.php');
 
 get('/stockmarket.html', '/views/stockmarket.php');
 get('/stockbasic.html', '/views/stockbasic.php');
@@ -28,8 +29,17 @@ get('/401k.html', '/views/401k.php');
 get('/roth.html', '/views/roth.php');
 get('/trad.html', '/views/trad.php');
 
+get('/news.html', '/views/news.php');
+get('/calc.html', '/views/calculator.php');
+
 post('/reg.php', '/views/reg.php');
 post('/auth.php', '/views/auth.php');
+
+// any will catch GET or POST requests and call 404.php if hit
+any('/404','views/404.php');
+// ####################################
+// #######  helpful methods below #####
+// ####################################
 
 // Dynamic GET. Example with 1 variable
 // The $id will be available in user.php
@@ -74,12 +84,5 @@ post('/auth.php', '/views/auth.php');
 
 //});
 
-// ##################################################
-// ##################################################
-// ##################################################
-// any can be used for GETs or POSTs
 
-// For GET or POST
-// The 404.php which is inside the views folder will be called
-// The 404.php has access to $_GET and $_POST
-any('/404','views/404.php');
+

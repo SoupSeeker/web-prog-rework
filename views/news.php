@@ -10,16 +10,29 @@
 </head>
 <body>
    <main>
-        <nav>
+        <?php if($_SESSION["name"]){ ?>
+      <nav>
           <ul>
-            <li class="welcome">Welcome to <span style="color: #0faa55;">PaperTradr</span> | User</li> <!-- TODO: update User with index.js -->
+            <li class="welcome">Welcome to <span style="color: #0faa55;">PaperTradr</span> <?php echo $_SESSION["name"] ?>
+            </li>
             <li><a href="main.html">Home</a></li> |
-            <li><a href="register.html">Register</a></li> |
-            <li><a href="login.html">Login</a></li> |
-            <!--<li><a href="news">News</a></li>-->
-            <!--<li><a href="retirement"> Retirement</a></li>-->  
+            <li><a href="news.html">News</a></li> |
+            <li><a href="calc.html">Calculator</a></li> |
+            <li><a href="logout.php">Logout</a></li>
           </ul>
         </nav>
+
+      <?php } else { ?>
+        <nav>
+          <ul>
+            <li class="welcome">Welcome to <span style="color: #0faa55;">PaperTradr</span> <?php echo $_SESSION["name"] ?>
+            </li>
+            <li><a href="main.html">Home</a></li> |
+            <li><a href="register.html">Register</a></li> |
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      <?php } ?>
         </br>
         <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
